@@ -11,8 +11,10 @@ jobs:
             - name: Install Node dependencies
               run: npm ci
             - name: Run the linter script
-              run: npm lint
+              run: npm run lint
             - name: Run the Test script
-              run: npm test
+              run: npm run test
+            - name: Run the Test script
+              run: npm run build
             - name: Run the Deploy script
               run: echo "Deploying...  Congrats! The app is deployed successfully!!"
